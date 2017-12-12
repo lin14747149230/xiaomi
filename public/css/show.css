@@ -1,0 +1,235 @@
+*{
+	margin:0px;
+	padding:0px;
+	font-family:微软雅黑;
+}
+a{
+	text-decoration:none;
+	color:black;
+}
+ul{
+	list-style:none;
+}
+img{
+	border:0px;
+}
+.all{
+	width:100%;
+	height:auto;
+	margin:0 auto;
+}
+.nav-title{
+	height:40px;
+	background-color:#f5f5f5;
+	line-height:40px;
+	color:#616161;
+	font-size: 12px;
+}
+.nav-title .tit{
+	width:1226px;
+	margin-right:auto;
+	margin-left:auto;
+}
+.nav-title a{
+	color: #757575;
+}
+.nav-title .sep{
+	margin: 0 0.5em;
+	color: #b0b0b0;
+}
+.nav-title a:hover{
+	color:#333;
+}
+.cons{
+	overflow:hidden;
+}
+.cons .row{
+	width: 1240px;
+	overflow:hidden;
+	margin:50px auto;
+}
+.cons .row .cons-left{
+	float:left;
+	width:792px;
+	overflow:hidden;
+	position: relative;
+}
+.cons .row .cons-left .goods-small-pic{
+	width:70px;
+	position: absolute;
+}
+.cons .row .cons-left .goods-small-pic .current{
+	cursor:pointer;
+	text-align:center;
+	margin-bottom:15px;
+	border-color:#ff6700;
+}
+.cons .row .cons-left .goods-small-pic li{
+	height: 60px;
+	padding: 4px;
+	border: 1px solid #e0e0e0;
+	margin-bottom: 15px;
+	transition: border-color .4s ease-out;
+}
+.cons .row .cons-left .goods-small-pic li img{
+	width: 60px;
+	height: 60px;
+}
+.cons .row .cons-left .goods-big-pic{
+	display:none;
+	margin-left:160px
+}
+.cons .row .cons-right{
+	float:left;
+	position:relative;
+}
+.cons .row .cons-right .goods-info-box{
+	min-height: 550px;
+}
+.cons .row .cons-right .goods-info-head .goods-name{
+	color: #333;
+	font-size: 28px;
+	font-weight: bold;
+	line-height: 38px;
+}
+.cons .row .cons-right .goods-info-head .goods-subtitle{
+	margin-top: 7px;
+}
+.cons .row .cons-right .goods-info-head .goods-subtitle p{
+	color: #616161;
+	font-size: 14px;
+	line-height: 23px;
+}
+.cons .row .cons-right .goods-info-head .goods-subtitle .pro-price{
+	display: block;
+	font-size: 18px;
+	line-height: 1;
+	color: #ff6700;
+	border-bottom: 1px solid #e0e0e0;
+	padding: 12px 0 20px;
+}
+.cons .row .cons-right .goods-info-head .goods-subtitle .pro-price del{
+	font-size: 14px;
+	margin-left: 5px;
+	color: #b0b0b0;
+}
+.cons-right .address-wrap{
+	width: 430px;
+	height:100px;
+	background-color: blue;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+.cons-right .list-wrap{
+}
+.cons-right .list-wrap .pro{
+	height:60px;
+	margin-bottom:40px;
+}
+.cons-right .list-wrap .pro .pro-title{
+	line-height: 1;
+	margin-bottom:15px;
+}
+.cons-right .list-wrap .pro ul{
+	padding-top: 1px;
+	cursor: pointer;
+	float: left;
+	transition: all .2s ease;
+	margin-left: -6px;
+}
+.cons-right .list-wrap .pro ul a{
+	display: block;
+	color: #333;
+}
+.cons-right .list-wrap .pro ul li{
+	width:210px;
+	height:44px;
+	border: 1px solid #e0e0e0;
+	line-height: 44px;
+	float:left;
+	margin-left: 6px;
+}
+.cons-right .list-wrap .pro ul li.active{
+	border-color: #ff6700;
+	color: #ff6700;
+}
+.cons-right .list-wrap .pro .ul-list li a{
+	text-align: left;
+	margin: 0;
+	padding: 0 10px;
+}
+.cons-right .list-wrap .pro ul li .name{
+	overflow: hidden;
+	display: inline-block;
+}
+.cons-right .list-wrap .pro ul li .price{
+	float: right;
+}	
+.cons-right .list-wrap .pro ul a .price{
+	color: #b0b0b0;
+}
+.cons-right .list-wrap .pro ul li a{
+	margin: 0 10px;
+	text-align: center;
+}
+.cons-right .list-wrap .pro ul img{
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	margin-right: 10px;
+	vertical-align: middle;
+	margin-top: -2px;
+}
+.cons-right .pro-list{
+	background: #f9f9fa;
+	padding:25px;
+	margin-bottom:25px;
+	display: none;
+}
+.cons-right .pro-list ul li{
+	color: #616161;
+	font-size:15px;
+}
+.cons-right .pro-list ul li del{
+	margin-left:30px;
+}
+.cons-right .pro-list ul .totlePrice{
+	color: #ff6700;
+	font-size: 24px;
+	padding-top: 20px;
+}
+.cons-right .btn-wrap{
+	margin: 10px 0 20px 0;
+}
+.cons-right .btn-wrap li {
+    float: left;
+    margin-right: 10px;
+}
+.btn-primary {
+    background: #ff6700;
+    border-color: #ff6700;
+    color: #fff;
+}
+.btn-biglarge {
+    width: 298px;
+    height: 52px;
+    line-height: 52px;
+    font-size: 16px;
+}
+.btn{
+	display: inline-block;
+	text-align: center;
+	cursor: pointer;
+	transition: all .4s;
+}
+
+
+
+
+
+
+
+
+
+
+

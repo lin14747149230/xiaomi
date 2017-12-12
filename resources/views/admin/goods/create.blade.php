@@ -1,7 +1,7 @@
 @extends('admin.index')
 
 @section('title')
-<h3 class="page-header"><i class="fa fa-laptop"></i>文章添加</h3>
+<h3 class="page-header"><i class="fa fa-laptop"></i>商品添加</h3>
 @endsection
 
 @section('content') 
@@ -11,26 +11,36 @@
 <div class="row">
  	<section class="panel">
         <div class="panel-body">
-            <form class="form-horizontal" role="form" action="/article" method="post" enctype="multipart/form-data">
+            <form class="form-horizontal" role="form" action="/goods" method="post" enctype="multipart/form-data">
                 <div class="form-group">
-                    <label class="col-lg-2 control-label">文章标题</label>
+                    <label class="col-lg-2 control-label">商品名称</label>
                     <div class="col-lg-10">
-                        <input type="username" class="form-control" name="title" id="inputusername" placeholder="admin">
+                        <input class="form-control" name="goods_tit">
                     </div>
                 </div>
                 <div class="form-group">
-                    <label class="col-lg-2 control-label">文章图像</label>
+                    <label class="col-lg-2 control-label">价&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;格</label>
                     <div class="col-lg-10">
-                        <input type="file" class="form-control" id="inputEmail" name="pic">
+                        <input type="text" class="form-control" name="goods_price">
                     </div>
                 </div>
                 <div class="form-group">
-                    <label class="col-lg-2 control-label">文章内容</label>
-        <script id="editor" name="content" type="text/plain" style="width:1000px;"></script>
+                    <label class="col-lg-2 control-label">库&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;存</label>
                     <div class="col-lg-10">
-                        <textarea name="content" class="form-control"></textarea>
+                        <input type="text" class="form-control" name="goods_kucun">
                     </div>
                 </div>
+                <div class="form-group">
+                    <label class="col-lg-2 control-label">商品图片</label>
+                    <div class="col-lg-10">
+                        <input type="file" class="form-control" name="pic[]" multiple>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-lg-2 control-label">商品详情</label>
+                    <script id="editor" name="goods_con" type="text/plain" style="width:1000px;"></script>
+                </div>
+                
                 {{csrf_field()}}
                 <div class="form-group">
                     <div class="col-lg-offset-2 col-lg-10">
@@ -42,7 +52,6 @@
         </div>
 	</section>  
 </div> 
-
 <script>
     var ue = UE.getEditor('editor');
 </script>

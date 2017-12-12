@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class PinglunController extends Controller
+class XqController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -23,7 +23,7 @@ class PinglunController extends Controller
      */
     public function create()
     {
-     
+        return view('admin.xq.create');
     }
 
     /**

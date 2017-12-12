@@ -404,7 +404,6 @@
     <script src="/administrator/niceadmin/js/charts.js"></script>
     <script src="/administrator/niceadmin/js/jquery.slimscroll.min.js"></script>
   <script>
-
       //knob
       $(function() {
         $(".knob").knob({
@@ -413,7 +412,6 @@
           }
         })
       });
-
       //carousel
       $(document).ready(function() {
           $("#owl-slider").owlCarousel({
@@ -421,12 +419,9 @@
               slideSpeed : 300,
               paginationSpeed : 400,
               singleItem : true
-
           });
       });
-
       //custom select box
-
       $(function(){
           $('select.styled').customSelect();
       });
@@ -446,11 +441,3 @@
         onLabelShow: function(e, el, code){
           el.html(el.html()+' (GDP - '+gdpData[code]+')');
         }
-      });
-    });
-
-  </script>
-    @section('js')
-    @show
-</body>
-</html>

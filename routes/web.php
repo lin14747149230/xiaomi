@@ -34,9 +34,20 @@ Route::group(['middleware'=>'login'], function(){
 	//分类管理
 	Route::resource('cate','CateController');
 
+	//商品管理
+	Route::resource('goods','GoodsController');
+
+	//详情管理
+	Route::resource('xq','XqController');
+
+
 	
 	
 });
+
+//首页内容
+Route::get('/index','IndexController@index');
+
 
 //详情页内容
 Route::get('xiangqing','XiangqingController@xiangqing');
@@ -44,7 +55,8 @@ Route::get('xiangqing1','Xiangqing1Controller@xiangqing1');
 Route::get('xiangqing2','Xiangqing2Controller@xiangqing2');
 Route::get('xiangqing3','Xiangqing3Controller@xiangqing3');
 
-
+//详情页
+Route::get('good','GoodsController@good');
 
 
 

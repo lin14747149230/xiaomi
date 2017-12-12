@@ -31,16 +31,23 @@
 
 	<a href="javascript:;" class="">
 	<i class="icon_document_alt"></i>
-	<span>评论管理</span>
+	<span>商品管理</span>
 	    <span class="menu-arrow arrow_carrot-right"></span>
 	</a>
+	<ul class="sub">
+	    <li><a class="" href="/goods/create">商品添加</a></li>                          
+	    <li><a class="" href="/goods">商品列表</a></li>
+	</ul>
 
 	<a href="javascript:;" class="">
 	<i class="icon_document_alt"></i>
-	<span>视频管理</span>
+	<span>详情管理</span>
 	    <span class="menu-arrow arrow_carrot-right"></span>
 	</a>
-
+	<ul class="sub">
+	    <li><a class="" href="/xq/create">详情添加</a></li>                          
+	    <li><a class="" href="/xq">详情列表</a></li>
+	</ul>
 </li>  
 
 
