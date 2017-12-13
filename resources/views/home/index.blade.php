@@ -3,38 +3,26 @@
 		<li class="all">
 			<div class="side-nav">
 				<ul class="sidenav-list">
-					<li class="side-item"><a href="/home/lists">手机 电话卡<i class="iconfont">&#xe6a7;</i></a>
+					@foreach($cat as $k => $v)
+					<li class="side-item">
+						<a href="/home/lists">{{$v->name}}<i class="iconfont">&#xe6a7;</i></a>
 						<div class="children-nav">
+						@foreach($v->goods as $a=>$b)
 							<ul class="children-list">
-								<li>
-									<a href="#" class="link">
-										<img src="/images/icon/holder_40.png" class="icon-80">
-										<span class="title">小米6</span>
-									</a>
-									<a href="#" class="buybtn">选购</a>
+								
+								<li><a href="#" class="link">
+									@foreach($b->goods_pic as $c=>$d)
+									<img src="{{$d->pic}}" class="icon-80">
+									@endforeach
+								<span class="title">{{$b->goods_tit}}</span></a>
 								</li>
-								<li><a href="#" class="link"><img src="/images/icon/xm5_80.png" class="icon-80"><span class="title">小米5X</span></a><a href="#" class="buybtn">选购</a></li>
-								<li><a href="#" class="link"><img src="/images/icon/max2_80.jpg" class="icon-80"><span class="title">小米Max2</span></a><a href="#" class="buybtn">选购</a></li>
-								<li><a href="#" class="link"><img src="/images/icon/5c_80.png" class="icon-80"><span class="title">小米手机5c</span></a><a href="#" class="buybtn">选购</a></li>
-								<li><a href="#" class="link"><img src="/images/icon/xmNOTE2_80.jpg" class="icon-80"><span class="title">小米 Note2</span></a><a href="#" class="buybtn">选购</a></li>
-								<li><a href="#" class="link"><img src="/images/icon/MIX_80.jpg" class="icon-80"><span class="title">小米MIX</span></a><a href="#" class="buybtn">选购</a></li>
+								
 							</ul>
-							<ul class="children-list">
-								<li><a href="#" class="link"><img src="/images/icon/xm5s_80.jpg"><span class="title">小米5s</span></a><a href="#" class="buybtn">选购</a></li>
-								<li><a href="#" class="link"><img src="/images/icon/xm5S-plus_80.jpg"><span class="title">小米5s Plus</span></a><a href="#" class="buybtn">选购</a></li>
-								<li><a href="#" class="link"><img src="/images/icon/hmn4x_80.png"><span class="title">红米Note 4X</span></a><a href="#" class="buybtn">选购</a></li>
-								<li><a href="#" class="link"><img src="/images/icon/hm4x_80.png"><span class="title">红米4X</span></a><a href="#" class="buybtn">选购</a></li>
-								<li><a href="#" class="link"><img src="/images/icon/hm4_80.jpg"><span class="title">红米4</span></a><a href="#" class="buybtn">选购</a></li>
-								<li><a href="#" class="link"><img src="/images/icon/4G+80.jpg"><span class="title">移动4G+专区</span></a></li>
-							</ul>
-							<ul class="children-list">
-								<li><a href="#" class="link"><img src="/images/icon/compare.jpg" class="icon-80"><span class="title">对比手机</span></a></li>
-								<li><a href="#" class="link"><img src="/images/icon/mifenka-1.jpg"><span class="title">米粉卡 日租卡</span></a></li>
-								<li><a href="#" class="link"><img src="/images/icon/mimobile.jpg"><span class="title">小米移动 电话卡</span></a></li>
-							</ul>
+							@endforeach
 						</div>
 					</li>
-					<li class="side-item"><a href="#">笔记本 平板<i class="iconfont">&#xe6a7;</i></a>
+					@endforeach
+					<!-- <li class="side-item"><a href="#">笔记本<i class="iconfont">&#xe6a7;</i></a>
 						<div class="children-nav">
 							<ul class="children-list">
 								<li><a href="#" class="link"><img src="/images/icon/holder_40.png"><span class="title">小米6</span></a><a href="#" class="buybtn">选购</a></li>
@@ -285,7 +273,7 @@
 								<li><a href="#" class="link"><img src="/images/icon/holder_40.png"><span class="title">小米6</span></a><a href="#" class="buybtn">选购</a></li>
 							</ul>
 						</div>
-					</li>
+					</li> -->
 				</ul>
 			</div>
 		</li>

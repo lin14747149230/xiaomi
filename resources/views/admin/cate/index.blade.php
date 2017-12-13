@@ -16,7 +16,7 @@
             <thead>
                 <tr role="row">
                 	<th class="sorting_asc" tabindex="0" aria-controls="dataTables-example" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Rendering engine: activate to sort column descending" style="width: 175px;">ID</th>
-                	<th class="sorting" tabindex="0" aria-controls="dataTables-example" rowspan="1" colspan="1" aria-label="Browser: activate to sort column ascending" style="width: 202px;">标题</th>       
+                	<th class="sorting" tabindex="0" aria-controls="dataTables-example" rowspan="1" colspan="1" aria-label="Browser: activate to sort column ascending" style="width: 202px;">标题</th> 
                 	<th class="sorting" tabindex="0" aria-controls="dataTables-example" rowspan="1" colspan="1" aria-label="CSS grade: activate to sort column ascending" style="width: 110px;">操作</th>
                	</tr>
             </thead>
@@ -26,6 +26,7 @@
 		            <tr class="gradeA odd" role="row">
 			            <td class="sorting_1">{{$v->id}}</td>
 			            <td>{{$v->name}}</td>
+
 			            <td class="center">
 			            	<a class="btn btn-danger pull-left" href="/cate/{{$v->id}}/edit">修改</a>
 			            		<form class="del" action="/cate/{{$v->id}}" method="post">

@@ -19,6 +19,18 @@
                     </div>
                 </div>
                 <div class="form-group">
+                    <label class="col-lg-2 control-label">商品分类</label>
+                    <div class="col-lg-10">
+                    <select class="form-control" name="fl_id">
+                        <option value="0">分类名称</option>
+                        @foreach($cates as $k=>$v)
+                        <option value="{{$v->id}}">{{$v->name}}</option>
+                        @endforeach
+                    </select>
+                    </div>
+                </div>
+                
+                <div class="form-group">
                     <label class="col-lg-2 control-label">价&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;格</label>
                     <div class="col-lg-10">
                         <input type="text" class="form-control" name="goods_price">

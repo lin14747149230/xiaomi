@@ -26,6 +26,12 @@
                     </select>
                     </div>
                 </div>
+                <div class="form-group">
+                    <label class="col-lg-2 control-label">文章图像</label>
+                    <div class="col-lg-10">
+                        <input type="file" class="form-control" id="inputEmail" name="pic[]" multiple>
+                    </div>
+                </div>
                 
                 {{csrf_field()}}
                 <div class="form-group">
