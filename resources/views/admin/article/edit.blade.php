@@ -19,6 +19,12 @@
                     </div>
                 </div>
                 <div class="form-group">
+                    <label class="col-lg-2 control-label">文章价格</label>
+                    <div class="col-lg-10">
+                        <input type="text" class="form-control" value="{{$article->price}}" name="price">
+                    </div>
+                </div>
+                <div class="form-group">
                     <img src="{{$article->pic}}" alt="">
                     <hr>
                     <label class="col-lg-2 control-label">文章图像</label>

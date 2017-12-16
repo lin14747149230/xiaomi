@@ -13,9 +13,21 @@
         <div class="panel-body">
             <form class="form-horizontal" role="form" action="/article" method="post" enctype="multipart/form-data">
                 <div class="form-group">
+                    <label class="col-lg-2 control-label">文章标签</label>
+                    <div class="col-lg-10">
+                        <input type="text" class="form-control" name="name">
+                    </div>
+                </div>
+                <div class="form-group">
                     <label class="col-lg-2 control-label">文章标题</label>
                     <div class="col-lg-10">
-                        <input type="username" class="form-control" name="title" id="inputusername" placeholder="admin">
+                        <input type="text" class="form-control" name="title">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-lg-2 control-label">价&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;格</label>
+                    <div class="col-lg-10">
+                        <input type="text" class="form-control" name="price">
                     </div>
                 </div>
                 <div class="form-group">

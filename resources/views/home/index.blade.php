@@ -2656,45 +2656,22 @@
 				</div>
 				<div class="col-md-12 ">
 					<ul class="content-list clearfix">
+						@foreach($art as $k => $v)
 						<li class="goods-item other-item other-photo">
-							<p class="title">图书</p>
+							<p class="title">{{$v->name}}</p>
 							<ul class="other-silde clearfix">
-								<li>
-									<a href="" class="name">标题1</a>
-									<a href="" class="des">畅销作家大冰2016年新书！讲给你听，好吗好的！</a>
-									<a href="" class="goods-price">免费</a>
+								<li style="overflow:hidden">
+									<a href="" class="name">{{$v->title}}</a>
+									<a href="" class="des">{!!$v->content!!}</a>
+									<a href="" class="goods-price">{{$v->price}}</a>
 									<div class="other-thumb">
-										<a href=""><img src="/images/icon/holder_110.png" alt=""></a>
+										<a href=""><img src="{{$v->pic}}" alt=""></a>
 									</div>
 								</li>
-								<li>
-									<a href="" class="name">标题2</a>
-									<a href="" class="des">畅销作家大冰2016年新书！讲给你听，好吗好的！</a>
-									<a href="" class="goods-price">免费</a>
-									<div class="other-thumb">
-										<a href=""><img src="/images/icon/holder_110.png" alt=""></a>
-									</div>
-								</li>
-								<li>
-									<a href="" class="name">标题3</a>
-									<a href="" class="des">畅销作家大冰2016年新书！讲给你听，好吗好的！</a>
-									<a href="" class="goods-price">免费</a>
-									<div class="other-thumb">
-										<a href=""><img src="/images/icon/holder_110.png" alt=""></a>
-									</div>
-								</li>
-								<div class="other-btn">
-								<a href="javascript:" class="btn active" data-num="1"></a>
-								<a href="javascript:" class="btn" data-num="2"></a>
-								<a href="javascript:" class="btn" data-num="3"></a>
-								</div>
-								<div class="other-nav">
-									<a href="javascript:" class="o-prev btn-default"><i class="iconfont">&#xe697;</i></a>
-									<a href="javascript:" class="o-next"><i class="iconfont">&#xe6a7;</i></a>
-								</div>
 							</ul>
 						</li>
-						<li class="goods-item other-item other-theme">
+						@endforeach
+						<!--<li class="goods-item other-item other-theme">
 							<p class="title">图书</p>
 							<ul class="other-silde clearfix">
 								<li>
@@ -2705,31 +2682,6 @@
 										<a href=""><img src="/images/icon/holder_110.png" alt=""></a>
 									</div>
 								</li>
-								<li>
-									<a href="" class="name">标题2</a>
-									<a href="" class="des">畅销作家大冰2016年新书！讲给你听，好吗好的！</a>
-									<a href="" class="goods-price">免费</a>
-									<div class="other-thumb">
-										<a href=""><img src="/images/icon/holder_110.png" alt=""></a>
-									</div>
-								</li>
-								<li>
-									<a href="" class="name">标题3</a>
-									<a href="" class="des">畅销作家大冰2016年新书！讲给你听，好吗好的！</a>
-									<a href="" class="goods-price">免费</a>
-									<div class="other-thumb">
-										<a href=""><img src="/images/icon/holder_110.png" alt=""></a>
-									</div>
-								</li>
-								<div class="other-btn">
-								<a href="javascript:" class="btn active" data-num="1"></a>
-								<a href="javascript:" class="btn" data-num="2"></a>
-								<a href="javascript:" class="btn" data-num="3"></a>
-								</div>
-								<div class="other-nav">
-									<a href="javascript:" class="o-prev btn-default"><i class="iconfont">&#xe697;</i></a>
-									<a href="javascript:" class="o-next"><i class="iconfont">&#xe6a7;</i></a>
-								</div>
 							</ul>
 						</li>
 						<li class="goods-item other-item other-game">
@@ -2743,31 +2695,6 @@
 										<a href=""><img src="/images/icon/holder_110.png" alt=""></a>
 									</div>
 								</li>
-								<li>
-									<a href="" class="name">标题2</a>
-									<a href="" class="des">畅销作家大冰2016年新书！讲给你听，好吗好的！</a>
-									<a href="" class="goods-price">免费</a>
-									<div class="other-thumb">
-										<a href=""><img src="/images/icon/holder_110.png" alt=""></a>
-									</div>
-								</li>
-								<li>
-									<a href="" class="name">标题3</a>
-									<a href="" class="des">畅销作家大冰2016年新书！讲给你听，好吗好的！</a>
-									<a href="" class="goods-price">免费</a>
-									<div class="other-thumb">
-										<a href=""><img src="/images/icon/holder_110.png" alt=""></a>
-									</div>
-								</li>
-								<div class="other-btn">
-								<a href="javascript:" class="btn active" data-num="1"></a>
-								<a href="javascript:" class="btn" data-num="2"></a>
-								<a href="javascript:" class="btn" data-num="3"></a>
-								</div>
-								<div class="other-nav">
-									<a href="javascript:" class="o-prev btn-default"><i class="iconfont">&#xe697;</i></a>
-									<a href="javascript:" class="o-next"><i class="iconfont">&#xe6a7;</i></a>
-								</div>
 							</ul>
 						</li>
 						<li class="goods-item other-item other-app">
@@ -2781,35 +2708,10 @@
 										<a href=""><img src="/images/icon/holder_110.png" alt=""></a>
 									</div>
 								</li>
-								<li>
-									<a href="" class="name">标题2</a>
-									<a href="" class="des">畅销作家大冰2016年新书！讲给你听，好吗好的！</a>
-									<a href="" class="goods-price">免费</a>
-									<div class="other-thumb">
-										<a href=""><img src="/images/icon/holder_110.png" alt=""></a>
-									</div>
-								</li>
-								<li>
-									<a href="" class="name">标题3</a>
-									<a href="" class="des">畅销作家大冰2016年新书！讲给你听，好吗好的！</a>
-									<a href="" class="goods-price">免费</a>
-									<div class="other-thumb">
-										<a href=""><img src="/images/icon/holder_110.png" alt=""></a>
-									</div>
-								</li>
-								<div class="other-btn">
-									<a href="javascript:" class="btn active"  data-num="1"></a>
-									<a href="javascript:" class="btn"  data-num="2"></a>
-									<a href="javascript:" class="btn"  data-num="3"></a>
-								</div>
-								<div class="other-nav">
-									<a href="javascript:" class="o-prev btn-default"><i class="iconfont">&#xe697;</i></a>
-									<a href="javascript:" class="o-next"><i class="iconfont">&#xe6a7;</i></a>
-								</div>
 							</ul>
-						</li>
-
+						</li>-->
 					</ul>
+
 				</div>
 			</div>
 			<div class="goods-video">

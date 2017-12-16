@@ -46,7 +46,9 @@ class ArticleController extends Controller
      */
     public function create()
     {
-        return view('admin.article.create');
+        //读取分类信息
+        $articles = DB::table('articles')->get();
+        return view('admin.article.create',['articles'=>$articles]);
     }
 
     /**
@@ -58,7 +60,8 @@ class ArticleController extends Controller
     public function store(Request $request)
     {
         //获取参数
-        $data = $request->only(['title','content']);
+        $data = $request->only(['name','title','content','price','path']);
+        
         //针对图片处理
         if($request->hasFile('pic')){
             //获取文件的后缀名

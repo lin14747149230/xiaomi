@@ -18,7 +18,13 @@ class IndexController extends Controller
             }
     	}
          //dd($cat);
-    	return view('home.index', compact('cat'));
+
+        //文章
+        $art = DB::table('articles')->where('path','0')->get();
+
+        
+        // dd($art);
+    	return view('home.index', compact('cat','art'));
     }
 
 }

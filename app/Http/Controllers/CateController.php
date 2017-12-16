@@ -18,12 +18,7 @@ class CateController extends Controller
         $cates = DB::select("select id,name,pid,concat(path,'_',id) as paths from cates order by paths");
 
         //修改分类的名称  
-        foreach ($cates as $key => &$value) {
-            //根据path来进行数据分隔 判断层级数   1-1-1-1
-            $count = count(explode('_', $value->paths))-2;
-
-            $value->name = str_repeat('|-----', $count).$value->name;
-        }
+        
 
         //解析模板
         return view('admin.cate.index', ['cates'=>$cates]);
